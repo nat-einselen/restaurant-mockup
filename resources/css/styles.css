@@ -1,0 +1,37 @@
+/*
+MASTER STYLES
+*/
+body {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ffd230;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+}
+
+/*
+PAGE LAYOUT
+*/
+h1, h2, h3, h4 {
+    font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+}
+
+
+
+img {
+    max-width: 500px;
+}
+
+header, section, footer {
+    margin: 0px;
+    padding: 3rem;
+}
+/*
+PAGE STYLES
+*/
+.white-background {
+    background-color: #ffffff;
+}
+
