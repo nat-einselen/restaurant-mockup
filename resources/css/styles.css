@@ -61,9 +61,9 @@ POSITION BUTTON ON TOP OF IMAGE
     flex-direction: column;
 }
 
-/*
+/**************************
 ABOUT SECTION
-*/
+***************************/
 .about-section img {
     width: 100%;
     margin-bottom: 20px;
@@ -75,9 +75,9 @@ ABOUT SECTION
     padding: 15px;
 }
 
-/*
+/**************************
 MENU HIGHLIGHT SECTION
-*/
+***************************/
 
 .menu-section h2 {
     font-size: 2rem;
@@ -217,12 +217,29 @@ BUTTON STYLE
     padding: 10px;
 }
 
-.menu-section button {
+.white-btn {
     background-color: #ffffff;
 }
 
 button:hover {
     background-color: #ed55a2;
+}
+
+.home-btn {
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 300px;
+}
+
+.home-btn .white-btn {
+    font-size: 1rem;
+}
+
+/*MENU IMAGE*/
+.menu-png {
+    max-width: 100%;
+    height: auto;
 }
 
 
