@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #ffd230;
     max-width: 100vw;
+    min-width: 400px;
 }
 
 
@@ -134,11 +135,10 @@ ol {
 
 ol h4 {
     font-size: 1.2rem;
-    margin-bottom: 0;
 }
 
 ol p {
-    margin-top: 5px;
+    margin: 15px 0;
 }
 
 /***********************
@@ -152,6 +152,8 @@ PARTNERS SECTION
 .partner-highlight:last-child {
    margin-top: 30px;
 }
+
+
 /**********************
 FOOTER
 ***********************/
@@ -238,51 +240,131 @@ button:hover {
 
 /*MENU IMAGE*/
 .menu-png {
-    max-width: 100%;
+    max-width: 450px;
     height: auto;
+    display: block;
+
+}
+
+.home-btn {
+    margin: 50px auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.menu-pg {
+    background-color: #ffd230;
+} 
+
+.menu-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*********************
-MEDIA QUERIES FOR TABLET
+MEDIA QUERIES
 **********************/
+
+@media screen and (min-width: 744px) {
+    header {
+        align-items: center;
+    }
+}
 
 @media screen and (min-width: 1000px) {
-    body, header p, h2 {
-        font-size: 2em;
-    }
+   header {
+    padding-top: 8%;
 
-    .btn-style {
-        font-size: 2em;
-        height: 2em;
-    }
+   }
 
-    .about-section .text-container {
-        
-        padding: 30px;
-    }
+   header > *, main img, main .text-container {
+    max-width: 800px;
+   }
+
+   .about-section, .menu-section, .additional-info-section, .partners-section {
+    align-items: center;
+    box-sizing: border-box;
+   }
+
+   .ol-container {
+    max-width: 800px;
+   }
+
+   /*************************************
+   CHANGE ORIENTATION OF MENU SECTION
+   ***************************************/
+   .menu-item-container {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: space-around;
+   }
+
+   .menu-item-highlight img {
+    max-width: 250px;
+    
+   }
+
+   .menu-section .text-container {
+    width: 50%;
+    text-align: center;
+   }
+
+   .first-flex-item {
+    order: -1;
+   }
 
     .menu-item-text {
-        padding: 30px;
-        bottom: 50px;
+        bottom: -30px;
     }
 
-    ol {
-        padding: 20px 50px;
-    }
+   /*************************************
+   CHANGE ORIENTATION OF PARTNER SECTION
+   ***************************************/
 
-    ol h4 {
-        font-size: 2rem;
-    }
-  }
+   .partner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+   }
+
+   .partner-highlight {
+    max-width: 350px;
+   }
+
+   .partner-highlight img {
+    max-width: 350px;
+   }
+
+   .partner-highlight:last-child {
+    margin-top: 0px;
+ }
+
+ /*************************************
+   CHANGE ORIENTATION OF FOOTER SECTION
+   ***************************************/
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+}
 
 
-/*********************
-MEDIA QUERIES FOR DESKTOP
-**********************/
+/**************************
+CHANGE ORIENTATION OF MENU
+**************************/
 
-@media screen and (min-width: 30em) and (orientation: landscape) {
-    /* … */
-  }
+.menu-img-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+}
+
 
 
 
