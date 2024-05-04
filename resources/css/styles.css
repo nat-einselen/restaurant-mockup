@@ -28,7 +28,9 @@ header, section, footer {
 header {
     flex-direction: column;
     align-items: start;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    height: 90vh;
+    padding-top: 20%;
 }
 
 h1 {
@@ -79,21 +81,16 @@ ABOUT SECTION
 MENU HIGHLIGHT SECTION
 ***************************/
 
-.menu-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
 .menu-section button {
     margin-bottom: 20px;
     width: 70%;
 }
 
-.menu-item-text p {
+h4 + p {
     margin: 0;
 }
 
-.menu-item-text h4 {
+h4 {
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -152,6 +149,9 @@ PARTNERS SECTION
     padding-top: 0;
 }
 
+.partner-highlight:last-child {
+   margin-top: 30px;
+}
 /**********************
 FOOTER
 ***********************/
@@ -242,6 +242,47 @@ button:hover {
     height: auto;
 }
 
+/*********************
+MEDIA QUERIES FOR TABLET
+**********************/
+
+@media screen and (min-width: 1000px) {
+    body, header p, h2 {
+        font-size: 2em;
+    }
+
+    .btn-style {
+        font-size: 2em;
+        height: 2em;
+    }
+
+    .about-section .text-container {
+        
+        padding: 30px;
+    }
+
+    .menu-item-text {
+        padding: 30px;
+        bottom: 50px;
+    }
+
+    ol {
+        padding: 20px 50px;
+    }
+
+    ol h4 {
+        font-size: 2rem;
+    }
+  }
+
+
+/*********************
+MEDIA QUERIES FOR DESKTOP
+**********************/
+
+@media screen and (min-width: 30em) and (orientation: landscape) {
+    /* … */
+  }
 
 
 
